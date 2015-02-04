@@ -2,8 +2,8 @@ import { curry2 } from 'fj-curry';
 
 
 function _and(x, y) {
-  return () => {
-    return x() && y();
+  return (...args) => {
+    return x.apply(null, args) && y.apply(null, args);
   };
 }
 
