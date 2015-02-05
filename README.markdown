@@ -20,6 +20,12 @@ and(T)(T)()); // => true
 and(T, F)()); // => false
 and(F, F)()); // => false
 and(F, F)()); // => false
+
+// arguments are passed to the predicates
+let eq = (x, y) => x === y;
+let sumGt = (x, y) => x + y > 0;
+
+and(eq, sumGt)(3, 3)); // => true
 ```
 
 
