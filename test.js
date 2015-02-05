@@ -21,9 +21,6 @@ test("fj-and", function (t) {
   var isT = function (x) {
     return x === true;
   };
-  var isF = function (x) {
-    return x === false;
-  };
 
   t.ok(and(T, T)());
   t.ok(and(T)(T)());

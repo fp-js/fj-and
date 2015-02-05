@@ -8,7 +8,6 @@ test('fj-and', (t) => {
   let T = () => true;
   let F = () => false;
   let isT = (x) => x === true;
-  let isF = (x) => x === false;
 
   t.ok(and(T, T)());
   t.ok(and(T)(T)());
